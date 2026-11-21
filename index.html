@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#11100e">
+  <meta name="description" content="Conceito não oficial de site para o Studio Que Beleza, Salvador, Bahia.">
+  <title>Studio Que Beleza — Proposta de site (não oficial)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <style>
+  :root{--black:#11100e;--black2:#1c1a16;--gold:#bd9a64;--goldlight:#dfc69a;--cream:#f7f4ef;--paper:#eee8dc;--white:#fefcf8;--brown:#3b332b;--muted:#6e685e;--line:rgba(178,149,105,.23);--title:'Italiana',Georgia,serif;--body:'DM Sans',Arial,sans-serif}
+  *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:94px}body{margin:0;font-family:var(--body);color:var(--black);background:var(--cream);-webkit-font-smoothing:antialiased}button,a{font:inherit}a{text-decoration:none;color:inherit}button{cursor:pointer}img{max-width:100%;display:block}button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}::selection{background:var(--gold);color:var(--black)}
+  .preview-ribbon{background:#302a20;color:#e9d6b5;text-align:center;font:500 10px/1.5 var(--body);letter-spacing:.105em;text-transform:uppercase;padding:8px 20px}
+  .container{max-width:1230px;padding:0 30px;margin:0 auto}.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.23em;font-size:10px;color:#b99862}.section{padding:116px 0}.section-heading{font:normal clamp(45px,5vw,70px)/1.06 var(--title);margin:12px 0 22px;letter-spacing:-.025em}.muted{color:var(--muted)}.gold-rule{height:1px;width:51px;background:var(--gold);display:block;margin:24px 0}.desc{font-size:14px;line-height:1.95;color:#655e55;max-width:530px}
+  .site-header{height:89px;position:sticky;top:0;z-index:100;background:rgba(17,16,14,.97);border-bottom:1px solid rgba(212,184,132,.14);backdrop-filter:blur(16px)}.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:30px}.logo-lockup{display:flex;align-items:center;gap:12px;min-width:195px}.logo-lockup img{height:60px;width:60px;object-fit:cover;border-radius:100%;border:1px solid rgba(200,169,112,.22)}.logo-fallback{display:none;color:var(--goldlight);font:27px/1 var(--title)}.logo-fallback small{display:block;font:600 8px/1.8 var(--body);letter-spacing:.22em;text-transform:uppercase}.desktop-nav{display:flex;align-items:center;gap:28px}.desktop-nav a{font-size:11px;font-weight:600;color:#ddd2c1;transition:color .2s}.desktop-nav a:hover{color:var(--goldlight)}.btn{border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:48px;padding:13px 23px;border:1px solid transparent;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:background .2s,transform .2s,color .2s}.btn:hover{transform:translateY(-2px)}.btn.gold{background:var(--gold);color:var(--black)}.btn.gold:hover{background:var(--goldlight)}.btn.outline{border-color:rgba(210,179,133,.55);color:var(--goldlight);background:transparent}.btn.outline:hover{background:rgba(205,176,123,.12)}.btn.dark{background:var(--black);color:var(--white)}.btn.dark:hover{background:#403526}.btn svg{width:15px;height:15px}.menu-toggle{border-radius:50%;display:none;border:1px solid rgba(190,158,100,.35);background:none;color:var(--gold);width:44px;height:44px;font-size:22px}.mobile-nav{display:none}
+  .hero{background:var(--black);color:var(--white);overflow:hidden;position:relative;min-height:665px}.hero:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 28% 38%,rgba(177,139,79,.09),transparent 48%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;min-height:650px}.hero-copy{position:relative;z-index:1;padding:112px 30px 105px 0;display:flex;align-items:flex-start;justify-content:center;flex-direction:column}.hero h1{font:normal clamp(60px,7vw,104px)/.99 var(--title);letter-spacing:-.034em;margin:19px 0 26px;max-width:720px}.hero h1 em{font-weight:normal;color:var(--goldlight)}.hero .hero-sub{font-size:14px;line-height:1.95;max-width:400px;color:#bdb3a4;margin:0 0 31px}.hero-ctas{display:flex;gap:13px;flex-wrap:wrap}.hero-foot{display:flex;gap:18px;align-items:center;margin-top:60px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#a99e8d}.hero-foot:before{content:'';display:block;height:1px;width:45px;background:var(--gold)}
+  .hero-art{position:relative;align-self:stretch;min-height:630px;border-left:1px solid rgba(210,180,126,.19);isolation:isolate;background:linear-gradient(130deg,#342921,#88735b 48%,#28221f)}.hero-art:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(to bottom,rgba(0,0,0,.13),rgba(0,0,0,.43)),url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=85') center 39% / cover;opacity:.92}.hero-art:after{content:'';position:absolute;inset:14px;border:1px solid rgba(228,193,137,.4);pointer-events:none}.hero-art .arc{position:absolute;inset:68px 58px 100px;border:1px solid rgba(250,220,171,.35);border-radius:48% 48% 0 0;pointer-events:none}.hero-art .label-float{position:absolute;bottom:44px;left:48px;right:48px;display:flex;justify-content:space-between;align-items:end;gap:20px;color:#fff;text-shadow:0 2px 15px #000}.label-float strong{font:normal 29px/1.08 var(--title);letter-spacing:.02em}.label-float span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#ead9bb}.hero-monogram{position:absolute;top:49px;right:49px;width:82px;height:82px;border-radius:50%;background:rgba(24,19,15,.7);border:1px solid rgba(217,181,125,.68);display:flex;align-items:center;justify-content:center;font:54px/1 var(--title);color:#e0c59e;z-index:2}
+  .benefit-strip{background:#ebe3d7;border-bottom:1px solid #dfd5c7}.benefit-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:30px}.benefit{display:flex;align-items:center;gap:16px;justify-content:center;border-right:1px solid #d5c7b6}.benefit:last-child{border:none}.benefit-icon{color:#917143;font:normal 29px/1 var(--title)}.benefit div{display:grid;gap:4px}.benefit strong{font-size:11px;letter-spacing:.03em}.benefit span{font-size:10px;color:#7e7468}
+  .services-top{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:43px}.services-top p{max-width:320px}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.service-card{position:relative;background:#2d2822;overflow:hidden;height:395px;isolation:isolate;display:flex;align-items:end}.service-card:before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.05) 63%),var(--service-photo) center/cover;z-index:-1;transition:transform .6s}.service-card:hover:before{transform:scale(1.06)}.service-card:nth-child(1){--service-photo:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=550&q=80')}.service-card:nth-child(2){--service-photo:url('https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=550&q=80')}.service-card:nth-child(3){--service-photo:url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=550&q=80')}.service-card:nth-child(4){--service-photo:url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=550&q=80')}.service-info{padding:27px 24px;color:#fff}.service-info small{color:#d6b67d;font-size:9px;letter-spacing:.22em;text-transform:uppercase}.service-info h3{font:normal 38px/1.1 var(--title);margin:8px 0}.service-info span{font-size:10px;color:#ddd0bb}
+  .about{background:#eae1d3;position:relative;overflow:hidden}.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center}.about-photo{min-height:560px;background:#8a7462 url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1100&q=85') center/cover;position:relative}.about-photo:after{content:'';position:absolute;inset:22px;border:1px solid rgba(255,255,255,.58)}.about-chip{position:absolute;bottom:-19px;right:-27px;background:var(--black);color:var(--goldlight);width:150px;height:150px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font:normal 23px/1.1 var(--title);transform:rotate(-11deg);z-index:1}.about-inner .section-heading{max-width:490px}.about-copy{font-size:14px;line-height:2;color:#635a50;max-width:470px}.quote{font:normal 30px/1.35 var(--title);color:#574333;border-left:1px solid #b18c57;padding-left:24px;margin-top:36px}
+  .insta{background:var(--cream)}.insta-header{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.insta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.social-item{aspect-ratio:3/4;background:#897567;overflow:hidden;position:relative}.social-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.social-item:hover img{transform:scale(1.05)}.social-item:after{content:'↗';position:absolute;bottom:12px;right:15px;color:white;font-size:24px;text-shadow:0 2px 6px #000}.social-note{font-size:11px;line-height:1.8;color:#827b71;margin:18px 0 0}
+  .booking{background:var(--black);color:white}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:center}.booking .section-heading{font-size:clamp(47px,5vw,71px)}.booking p{color:#b8afa1;line-height:1.9;font-size:14px}.booking-badge{display:inline-flex;padding:8px 12px;border:1px solid rgba(214,178,121,.37);color:#dbc69c;font-size:10px;letter-spacing:.15em;text-transform:uppercase;margin:16px 0 26px}.booking-frame-wrap{background:#f9f7f3;color:var(--black);min-height:455px;padding:15px;position:relative;border:1px solid #a5885d}.booking-panel{height:100%;min-height:424px;border:1px solid #d5c6af;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:38px;background:radial-gradient(circle at 50% 30%,#fffdf8,#f1eade)}.booking-panel svg{height:49px;width:49px;color:#ad8a56}.booking-panel h3{font:normal 40px/1.15 var(--title);margin:17px 0 7px}.booking-panel p{max-width:310px;color:#776a5b;font-size:12px}.booking-panel .btn{margin-top:15px}.booking-frame-wrap iframe{display:none;border:0;width:100%;height:510px;background:white}.booking-frame-wrap.loaded iframe{display:block}.booking-frame-wrap.loaded .booking-panel{display:none}.iframe-note{font-size:11px;color:#d7c4a2;margin-top:13px;line-height:1.5}
+  .visit{background:#ede6dc}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:center}.visit-lines{margin:30px 0 30px}.visit-item{padding:19px 0;border-bottom:1px solid #d7ccbc}.visit-item strong{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px}.visit-item span{font-size:13px;color:#756b60;line-height:1.8}.location-panel{background:#332a22;color:#fff;min-height:465px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;text-align:center;padding:28px}.location-panel:before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 55px,rgba(210,178,129,.07) 56px,transparent 57px),radial-gradient(circle at 55% 40%,#6b5134,#201b17 65%)}.location-panel:after{content:'';position:absolute;inset:27px;border:1px solid rgba(229,195,143,.3)}.location-panel>*{z-index:1}.location-panel .pin{font:normal 49px/1 var(--title);color:var(--goldlight);margin-bottom:25px}.location-panel strong{font:normal 38px/1.1 var(--title);color:#f5eee2}.location-panel span{font-size:11px;color:#dfcdaa;line-height:1.8;margin-top:12px}.location-panel a{margin-top:26px;color:var(--goldlight);border-bottom:1px solid var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:.12em;padding-bottom:8px}
+  .footer{background:var(--black);color:#9b9182;padding:58px 0 25px}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-bottom:42px;border-bottom:1px solid #312b24}.footer-brand{color:var(--goldlight);font:normal 39px/1 var(--title)}.footer-brand small{font:600 10px/1 var(--body);display:block;letter-spacing:.2em;text-transform:uppercase;margin-top:11px}.footer-links{display:flex;gap:23px;flex-wrap:wrap}.footer-links a{font-size:11px;color:#c8b9a2}.footer-bottom{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-top:22px;font-size:10px}.footer-bottom strong{color:#c8b18c;font-weight:500}
+  .floating-wa{position:fixed;right:24px;bottom:27px;z-index:110;background:#25211c;color:#f3dfbb;border:1px solid #a88a5c;padding:13px 17px;border-radius:40px;box-shadow:0 8px 30px #0005;font-size:11px;font-weight:700;display:flex;align-items:center;gap:10px}.floating-wa svg{width:17px;height:17px}.floating-wa:hover{background:#3c3125}.mobile-bottom{display:none}
+  @media(max-width:990px){.desktop-nav{gap:13px}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(58px,7vw,78px)}.hero-copy{padding:70px 20px 70px 0}.hero-art{min-height:590px}.service-card{height:320px}.service-info h3{font-size:31px}.about-inner{gap:6%}.about-photo{min-height:490px}}
+  @media(max-width:750px){.container{padding:0 21px}.section{padding:76px 0}.site-header{height:70px}.header-inner{gap:12px}.logo-lockup{min-width:0}.logo-lockup img{width:49px;height:49px}.desktop-nav,.header-inner>.btn{display:none}.menu-toggle{display:block}.mobile-nav{display:none;position:absolute;top:70px;left:0;right:0;background:#181612;padding:18px 24px 24px;flex-direction:column;gap:17px;border-bottom:1px solid var(--line);box-shadow:0 25px 35px #0005}.mobile-nav.open{display:flex}.mobile-nav a{font-size:13px;color:#e6d8c3}.hero-grid{display:flex;flex-direction:column;min-height:auto}.hero-copy{padding:79px 0 62px}.hero h1{font-size:clamp(58px,12vw,81px);max-width:590px}.hero .hero-sub{font-size:13px}.hero-foot{margin-top:46px}.hero-art{min-height:430px;margin:0 -21px}.hero-art .arc{inset:35px 45px 60px}.hero-art .label-float{bottom:35px;left:38px;right:38px}.benefit-inner{padding:21px;gap:3px}.benefit{gap:9px;justify-content:flex-start;padding:0 7px}.benefit-icon{font-size:24px}.benefit strong{font-size:9px}.benefit span{font-size:8px}.services-top,.insta-header{display:block}.service-grid{grid-template-columns:repeat(2,1fr)}.service-card{height:330px}.about-inner,.booking-grid,.visit-grid{grid-template-columns:1fr;gap:43px}.about-photo{min-height:450px;max-width:600px}.about-chip{right:2px}.about-inner .section-heading{margin-top:9px}.insta-grid{grid-template-columns:repeat(2,1fr)}.insta-header .btn{margin-top:14px}.booking-frame-wrap{min-height:345px}.booking-panel{min-height:315px;padding:25px}.booking-panel h3{font-size:34px}.location-panel{min-height:320px}.footer-top{display:block}.footer-links{margin-top:24px}.footer-bottom{display:block;line-height:2}.floating-wa{display:none}.mobile-bottom{display:flex;position:fixed;z-index:110;bottom:0;left:0;right:0;background:#11100e;padding:11px 18px;gap:10px;box-shadow:0 -6px 22px #0003}.mobile-bottom a{flex:1;text-align:center;justify-content:center;min-height:45px}.footer{padding-bottom:92px}}
+  @media(max-width:400px){.hero h1{font-size:56px}.hero-ctas{flex-direction:column;align-items:stretch}.benefit-inner{grid-template-columns:1fr;gap:16px}.benefit{border:0}.service-card{height:260px}.service-info{padding:17px}.service-info h3{font-size:30px}.hero-art{min-height:370px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+  /* Agenda Trinks — moldura editorial com mais área útil, sem alterar conteúdo externo */
+  .mobile-bottom.is-suppressed{display:none}
+  .booking-refined{padding:110px 0 94px;background:var(--black)}
+  .booking-refined .booking-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(210px,300px);gap:45px;align-items:end;margin-bottom:44px}
+  .booking-refined .section-heading{max-width:750px;font-size:clamp(54px,6.15vw,83px);line-height:1.04;margin:0 0 23px;letter-spacing:-.025em;text-wrap:balance}
+  .booking-refined .booking-lead{max-width:580px;margin:0;font-size:14px;line-height:1.9;color:#d0c5b4}
+  .booking-refined .booking-quick-action{display:flex;flex-direction:column;align-items:flex-start;gap:20px;padding-bottom:5px}
+  .booking-refined .booking-eyeline{display:inline-flex;align-items:center;gap:11px;color:#decba9;font-size:11px;font-weight:600;letter-spacing:.035em}
+  .booking-refined .booking-status-dot{width:7px;height:7px;border-radius:50%;background:#cdb58e;box-shadow:0 0 0 4px rgba(205,181,142,.09);flex:none}
+  .booking-refined .booking-external{min-height:48px;width:100%;justify-content:space-between}
+  .booking-refined .booking-external svg,.booking-refined .booking-shell-bottom svg{width:15px;height:15px;flex:none}
+  .booking-refined .booking-shell{background:#fff;overflow:hidden;border:1px solid #9c7d4f;box-shadow:0 25px 58px rgba(0,0,0,.28)}
+  .booking-refined .booking-shell-top{min-height:86px;padding:17px 28px;background:#29231d;display:flex;align-items:center;justify-content:space-between;gap:18px;color:#f0e3cf}
+  .booking-refined .booking-studio-lockup{display:flex;align-items:center;gap:14px}
+  .booking-refined .booking-monogram{font:normal 32px/1 var(--title);display:grid;place-items:center;width:46px;height:46px;border:1px solid #b89a6a;border-radius:50%;color:#e7d2b0;flex:none}
+  .booking-refined .booking-studio-lockup strong{font-weight:600;display:block;font-size:12px;letter-spacing:.045em}
+  .booking-refined .booking-studio-lockup small{display:block;font-size:10px;line-height:1.8;color:#c3b4a0;margin-top:3px}
+  .booking-refined .booking-provider{display:flex;align-items:center;gap:9px;color:#cabb9f;font-size:10px;line-height:1.4;text-align:right}
+  .booking-refined .booking-provider svg{width:19px;height:19px;flex:none;color:#c7ab7f}
+  .booking-refined .booking-iframe{display:block;width:100%;height:790px;border:0;background:#fff}
+  .booking-refined .booking-shell-bottom{padding:18px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;background:#f6f1e9;border-top:1px solid #e8dfd2}
+  .booking-refined .booking-shell-bottom p{font-size:11px;color:#5f5547;line-height:1.6;margin:0}
+  .booking-refined .booking-shell-bottom a{display:inline-flex;gap:8px;align-items:center;white-space:nowrap;font-size:11px;font-weight:700;color:#59452b;text-decoration:underline;text-underline-offset:4px}
+  .booking-refined .booking-shell-bottom a:hover{color:#231b13}
+  .booking-refined .booking-legal-note{font-size:10px;line-height:1.6;color:#ae9e87;margin:18px 0 0}
+  @media(max-width:850px){.booking-refined{padding:80px 0}.booking-refined .booking-intro{grid-template-columns:1fr;gap:22px}.booking-refined .booking-quick-action{flex-direction:row;justify-content:space-between;align-items:center}.booking-refined .booking-external{width:auto;min-width:225px}}
+  @media(max-width:600px){.booking-refined{padding:74px 0 86px}.booking-refined .section-heading{font-size:clamp(48px,11vw,64px)}.booking-refined .booking-intro{margin-bottom:28px}.booking-refined .booking-quick-action{flex-direction:column;align-items:stretch;gap:15px}.booking-refined .booking-eyeline{font-size:11px}.booking-refined .booking-shell-top{padding:14px 15px;min-height:73px}.booking-refined .booking-monogram{width:40px;height:40px;font-size:28px}.booking-refined .booking-studio-lockup{gap:10px}.booking-refined .booking-studio-lockup strong{font-size:11px}.booking-refined .booking-provider{font-size:0;gap:0}.booking-refined .booking-provider svg{width:20px;height:20px}.booking-refined .booking-iframe{height:840px}.booking-refined .booking-shell-bottom{padding:16px;align-items:flex-start;flex-direction:column;gap:9px}.booking-refined .booking-shell-bottom a{font-size:12px}.booking-refined .booking-legal-note{margin-top:15px}}
+  
+  /* Studio Que Beleza — perfil público incorporado; visual permanece sob controle do Instagram */
+  .insta-live{background:#f5f0e9;overflow:hidden}
+  .instagram-layout{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:clamp(42px,7vw,120px);align-items:center}
+  .instagram-copy{padding:38px 0 40px;max-width:510px}
+  .instagram-mark{height:58px;width:58px;border:1px solid #d6c2a4;border-radius:50%;display:grid;place-items:center;color:#a58252;margin-bottom:35px}
+  .instagram-mark svg{width:27px;height:27px}
+  .insta-live .section-heading{font-size:clamp(56px,6vw,85px);line-height:1.02;letter-spacing:-.028em;margin:0 0 27px;text-wrap:balance}
+  .insta-live .section-heading em{font-weight:normal;font-style:italic;color:#a7814d}
+  .instagram-lead{color:#65594d;font-size:15px;line-height:1.9;max-width:395px;margin:0}
+  .instagram-handle{display:flex;align-items:center;gap:15px;color:#97794e;font-weight:600;letter-spacing:.05em;font-size:12px;margin:31px 0 33px}
+  .instagram-handle-line{height:1px;width:34px;background:#b5986a}
+  .instagram-profile-cta{gap:19px;min-height:53px;padding-inline:26px}
+  .instagram-profile-cta svg{height:16px;width:16px}
+  .instagram-embed-wrap{min-width:0;max-width:575px;width:100%;justify-self:end}
+  .instagram-panel{background:#fff;border:1px solid #d8c9b4;box-shadow:0 24px 55px rgba(47,32,18,.11);border-radius:16px;overflow:hidden}
+  .instagram-panel-header{height:72px;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:0 26px;background:#1f1a16;color:#f9f4ed}
+  .instagram-panel-title{display:inline-flex;gap:13px;align-items:center;font-size:12px;font-weight:600;letter-spacing:.03em}
+  .instagram-panel-title svg{width:21px;height:21px;color:#e6cca3}
+  .instagram-panel-caption{font-size:10px;color:#c5b49e;white-space:nowrap}
+  .instagram-profile-frame{display:block;width:100%;height:615px;border:0;background:#fff;overflow:auto}
+  .instagram-panel-footer{min-height:66px;padding:17px 26px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #ece3d9;background:#fffdfa}
+  .instagram-panel-footer span{font-size:11px;color:#766d61;line-height:1.5}
+  .instagram-panel-footer a{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #c8b392;padding:10px 15px;color:#594632;font-size:11px;font-weight:700;border-radius:999px;white-space:nowrap;transition:background .2s}
+  .instagram-panel-footer a:hover{background:#f0e6d8}
+  .instagram-panel-footer a svg{width:14px;height:14px}
+  .instagram-embed-note{font-size:11px;line-height:1.6;color:#7a7167;max-width:510px;margin:16px 4px 0}
+  @media(max-width:900px){.instagram-layout{gap:38px;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}.instagram-copy{padding:0}.instagram-panel-header{padding-inline:18px}.instagram-panel-footer{padding:14px 18px}.instagram-profile-frame{height:580px}}
+  @media(max-width:750px){.instagram-layout{grid-template-columns:1fr;gap:32px}.instagram-copy{max-width:none;padding:0}.instagram-mark{height:46px;width:46px;margin-bottom:21px}.instagram-mark svg{width:23px;height:23px}.insta-live .section-heading{font-size:clamp(54px,12vw,75px);margin-bottom:16px}.instagram-lead{font-size:13px;max-width:520px}.instagram-handle{margin:22px 0}.instagram-embed-wrap{max-width:590px;justify-self:center}.instagram-profile-frame{height:600px}}
+  @media(max-width:430px){.mobile-bottom .btn{padding-inline:10px;font-size:9.5px;letter-spacing:.065em;white-space:nowrap;min-width:0}.instagram-panel-header{height:62px;padding-inline:16px}.instagram-panel-caption{display:none}.instagram-panel-footer{align-items:flex-start;flex-direction:column}.instagram-panel-footer a{width:100%}.instagram-profile-frame{height:520px}.instagram-profile-cta{width:100%;justify-content:center}}
+</style>
+</head>
+<body>
+<a href="#conteudo" class="skip" style="position:absolute;left:-9999px" onfocus="this.style.left='8px'">Pular para o conteúdo</a>
+<div class="preview-ribbon">Conceito visual de prospecção · proposta independente, não oficial · fotos ilustrativas</div>
+<header class="site-header">
+ <div class="container header-inner">
+  <a class="logo-lockup" href="#inicio" aria-label="Studio Que Beleza - Início">
+   <img src="https://d39p7gjvbgwtet.cloudfront.net/Estabelecimentos/236845/120x120/logo_000236845.jpg?v=20251002170800" alt="Logotipo do Studio Que Beleza" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+   <span class="logo-fallback">Que Beleza<small>studio de beleza</small></span>
+  </a>
+  <nav class="desktop-nav" aria-label="Navegação principal">
+   <a href="#servicos">Serviços</a><a href="#essencia">Nossa essência</a><a href="#instagram">Instagram</a><a href="#agendamento">Agendamento</a><a href="#onde-estamos">Localização</a>
+  </nav>
+  <a href="#agendamento" class="btn gold">Agendar horário <span aria-hidden="true">↗</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navegação mobile"><a href="#servicos">Serviços</a><a href="#essencia">Nossa essência</a><a href="#instagram">Instagram</a><a href="#agendamento">Agendamento</a><a href="#onde-estamos">Localização</a></nav>
+ </div>
+</header>
+<main id="conteudo">
+ <section class="hero" id="inicio">
+  <div class="container hero-grid">
+   <div class="hero-copy">
+    <span class="eyebrow">Studio Que Beleza · Salvador, Bahia</span>
+    <h1>O luxo de<br>ser <em>você.</em></h1>
+    <p class="hero-sub">Um espaço para desacelerar, se cuidar e celebrar sua beleza única. Cada detalhe pensado para transformar seu momento em uma experiência especial.</p>
+    <div class="hero-ctas"><a href="#agendamento" class="btn gold">Reserve seu momento <span aria-hidden="true">↗</span></a><a href="#essencia" class="btn outline">Conheça o studio</a></div>
+    <span class="hero-foot">Jardim Apipema · Salvador</span>
+   </div>
+   <div class="hero-art" role="img" aria-label="Imagem ilustrativa de ambiente de beleza sofisticado"><span class="arc" aria-hidden="true"></span><span class="hero-monogram" aria-hidden="true">Q</span><div class="label-float"><strong>Beleza com<br>identidade.</strong><span>Seu momento<br>merece cuidado.</span></div></div>
+  </div>
+ </section>
+ <div class="benefit-strip"><div class="container benefit-inner">
+  <div class="benefit"><span class="benefit-icon">✧</span><div><strong>Cuidado personalizado</strong><span>Um momento feito para você</span></div></div>
+  <div class="benefit"><span class="benefit-icon">◈</span><div><strong>Experiência acolhedora</strong><span>Beleza e bem-estar juntos</span></div></div>
+  <div class="benefit"><span class="benefit-icon">⌁</span><div><strong>Agenda online</strong><span>Praticidade pela Trinks</span></div></div>
+ </div></div>
+ <section class="section" id="servicos"><div class="container">
+  <div class="services-top"><div><span class="eyebrow">O que fazemos</span><h2 class="section-heading">Seu ritual de beleza.</h2></div><p class="desc">Cuidado e expressão pessoal em cada detalhe. Conheça algumas das categorias de atendimento divulgadas no agendamento do studio.</p></div>
+  <div class="service-grid">
+   <a href="#agendamento" class="service-card"><div class="service-info"><small>01 · Cuidados</small><h3>Cabelos</h3><span>Conheça as opções de atendimento ↗</span></div></a>
+   <a href="#agendamento" class="service-card"><div class="service-info"><small>02 · Beleza</small><h3>Unhas</h3><span>Conheça as opções de atendimento ↗</span></div></a>
+   <a href="#agendamento" class="service-card"><div class="service-info"><small>03 · Expressão</small><h3>Maquiagem</h3><span>Conheça as opções de atendimento ↗</span></div></a>
+   <a href="#agendamento" class="service-card"><div class="service-info"><small>04 · Bem-estar</small><h3>Estética</h3><span>Conheça as opções de atendimento ↗</span></div></a>
+  </div>
+ </div></section>
+ <section class="section about" id="essencia"><div class="container about-inner">
+  <div class="about-photo" role="img" aria-label="Imagem ilustrativa de trabalho profissional em salão"><div class="about-chip">Sua melhor<br>versão.</div></div>
+  <div><span class="eyebrow">Nossa essência</span><h2 class="section-heading">Um encontro entre arte, técnica e cuidado.</h2><span class="gold-rule"></span><p class="about-copy">No Studio Que Beleza, beleza e bem-estar caminham juntos. Um espaço criado para proporcionar uma experiência de cuidado atenta aos detalhes — da atmosfera acolhedora ao atendimento personalizado.</p><p class="about-copy">Aqui, cada momento é um convite para valorizar o que torna você única.</p><p class="quote">A verdadeira beleza começa quando você se sente bem.</p><a href="#agendamento" class="btn dark" style="margin-top:15px">Viva essa experiência ↗</a></div>
+ </div></section>
+ <section class="section insta insta-live" id="instagram" aria-labelledby="instagram-title">
+  <div class="container instagram-layout">
+   <div class="instagram-copy">
+    <div class="instagram-mark" aria-hidden="true">
+     <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="22" height="22" rx="6.5"/><circle cx="14" cy="14" r="5.1"/><circle cx="20.4" cy="7.7" r="1" fill="currentColor" stroke="none"/></svg>
+    </div>
+    <h2 class="section-heading" id="instagram-title">Beleza que<br><em>inspira.</em></h2>
+    <p class="instagram-lead">Inspirações, novidades e um pouco da rotina do Studio Que Beleza, diretamente do perfil oficial no Instagram.</p>
+    <div class="instagram-handle"><span class="instagram-handle-line" aria-hidden="true"></span><span>@quebelezastudio</span></div>
+    <a class="btn dark instagram-profile-cta" href="https://www.instagram.com/quebelezastudio/" target="_blank" rel="noopener noreferrer">Acompanhar no Instagram <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 16 16 4M6.5 4H16v9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+   </div>
+   <div class="instagram-embed-wrap">
+    <div class="instagram-panel" aria-label="Perfil público do Studio Que Beleza incorporado do Instagram">
+     <div class="instagram-panel-header"><span class="instagram-panel-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.7"/><circle cx="17.6" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg><span>Instagram do studio</span></span><span class="instagram-panel-caption">Perfil oficial</span></div>
+     <iframe class="instagram-profile-frame" title="Perfil oficial @quebelezastudio no Instagram" src="https://www.instagram.com/quebelezastudio/embed/" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="yes"></iframe>
+     <div class="instagram-panel-footer"><span>Exibição disponibilizada pelo Instagram</span><a href="https://www.instagram.com/quebelezastudio/" target="_blank" rel="noopener noreferrer">Abrir perfil <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 16 16 4M6.5 4H16v9.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    </div>
+    <p class="instagram-embed-note">A visualização depende das permissões e da disponibilidade do Instagram. Se não carregar, use “Abrir perfil”.</p>
+   </div>
+  </div>
+ </section>
+ <section class="section booking booking-refined" id="agendamento"><div class="container">
+  <div class="booking-intro">
+   <div class="booking-title-wrap">
+    <h2 class="section-heading">É hora de cuidar de você.</h2>
+    <p class="booking-lead">Encontre o serviço ideal e escolha o melhor horário, sem sair daqui. O agendamento é feito pela plataforma que o studio já utiliza.</p>
+   </div>
+   <div class="booking-quick-action">
+    <span class="booking-eyeline"><span class="booking-status-dot" aria-hidden="true"></span>Agenda online pela Trinks</span>
+    <a class="btn outline booking-external" href="https://www.trinks.com/studioquebeleza" target="_blank" rel="noopener noreferrer">Abrir agenda completa <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 16 16 4M6.5 4H16v9.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+   </div>
+  </div>
+  <div class="booking-shell">
+   <div class="booking-shell-top">
+    <div class="booking-studio-lockup"><span class="booking-monogram" aria-hidden="true">Q</span><span><strong>Studio Que Beleza</strong><small>Escolha seu serviço e horário</small></span></div>
+    <div class="booking-provider"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.3 16.6 5v4.8c0 4-2.6 6.9-6.6 8.1-4-1.2-6.6-4.1-6.6-8.1V5L10 2.3Z" stroke="currentColor" stroke-width="1.3"/><path d="m7 10 2 2 4-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Agendamento processado pela Trinks</span></div>
+   </div>
+   <iframe class="booking-iframe" id="trinksFrame" title="Agendamento online Studio Que Beleza via Trinks" src="https://www.trinks.com/studioquebeleza/framebusca" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="payment *"></iframe>
+   <div class="booking-shell-bottom"><p>Não conseguiu visualizar a agenda? Você pode abrir a página oficial de agendamentos em outra aba.</p><a href="https://www.trinks.com/studioquebeleza" target="_blank" rel="noopener noreferrer">Ir para Trinks <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 16 16 4M6.5 4H16v9.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+  <p class="booking-legal-note">Prévia de conceito, não oficial. Serviços, preços, profissionais e horários exibidos pertencem à agenda da Trinks e podem mudar.</p>
+ </div></section>
+ <section class="section visit" id="onde-estamos"><div class="container visit-grid">
+  <div><span class="eyebrow">Onde encontrar o studio</span><h2 class="section-heading">Seu refúgio no coração de Salvador.</h2><p class="desc">Um espaço de cuidado no Apipema Center, em Jardim Apipema.</p>
+  <div class="visit-lines"><div class="visit-item"><strong>Endereço</strong><span>Rua Professor Sabino Silva, 836, Loja 212<br>Apipema Center · Jardim Apipema · Salvador, BA</span></div><div class="visit-item"><strong>Horários informados na Trinks</strong><span>Segunda a sexta: 8h às 20h<br>Sábado: 8h às 18h · Domingo: fechado</span></div><div class="visit-item"><strong>Fale com o studio</strong><span>(71) 99640-7770</span></div></div>
+  <a href="https://api.whatsapp.com/send/?phone=%2B5571996407770" target="_blank" rel="noopener noreferrer" class="btn dark">Conversar pelo WhatsApp ↗</a>
+  </div>
+  <div class="location-panel"><span class="pin">⌖</span><strong>Studio Que Beleza</strong><span>Apipema Center · Loja 212<br>Jardim Apipema, Salvador</span><a href="https://www.google.com/maps?daddr=Rua+Professor+Sabino+Silva,+836,+Loja+212+Apipema+Center,+Jardim+Apipema,+Salvador,+BA+-+40169-610" target="_blank" rel="noopener noreferrer">Traçar rota ↗</a></div>
+ </div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-top"><div class="footer-brand">Que Beleza<small>Studio de beleza</small></div><div class="footer-links"><a href="#servicos">Serviços</a><a href="#essencia">O studio</a><a href="https://www.instagram.com/quebelezastudio/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.trinks.com/studioquebeleza" target="_blank" rel="noopener noreferrer">Agendar</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Studio Que Beleza · Conceito de website, não oficial.</span><strong>Prévia de prospecção · Não publicada pela empresa</strong></div></div></footer>
+<a class="floating-wa" href="https://api.whatsapp.com/send/?phone=%2B5571996407770" target="_blank" rel="noopener noreferrer" aria-label="Entrar em contato com o studio pelo WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20l1-4.8a8.5 8.5 0 1 1 16.5-3.6z"/><path d="M8.5 8.5c0 3 3.5 6 6 6.5l1.3-1.4 2.2 1.2"/></svg>WhatsApp</a>
+<div class="mobile-bottom"><a class="btn outline" href="https://www.instagram.com/quebelezastudio/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a class="btn gold" href="#agendamento">Agendar horário ↗</a></div>
+<script>
+ const menuBtn=document.getElementById('menuToggle'),mobileNav=document.getElementById('mobileNav');
+ menuBtn.addEventListener('click',()=>{let open=mobileNav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰';});
+ mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileNav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+ // Evita que a barra fixa no mobile obstrua a seleção de serviços dentro do iframe.
+ const bookingSection=document.getElementById('agendamento'),mobileBookingBar=document.querySelector('.mobile-bottom');
+ if('IntersectionObserver' in window && bookingSection && mobileBookingBar){
+   new IntersectionObserver(entries=>{mobileBookingBar.classList.toggle('is-suppressed',entries[0].isIntersecting);},{threshold:0.08}).observe(bookingSection);
+ }
+ document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
